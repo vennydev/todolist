@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# 투두리스트 만들기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 스택
 
-## Available Scripts
+Front-den
+- Javascript 
 
-In the project directory, you can run:
+Framework
+- React
 
-### `yarn start`
+Back-end
+FireBase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 만들어야 할 컴포넌트
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### TodoTemplate
+투두리스트의 전체 레이아웃을 설정하는 컴포넌트입니다.
 
-### `yarn test`
+### TodoHead
+오늘의 날짜와 해야하는 일이 몇 개 남았는지 표시해줍니다 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### TodoList
+할 일에 대한 정보들이 들어가 있는 todos 배열을 내장함수 map을 이용하여 여러개의 TodoItem들을 렌더링해줍니다.
 
-### `yarn build`
+### TodoItem
+할 일에 대한 정보들이 들어가 있습니다. 
+좌측에 있는 버튼을 누르면 할 일의 완료 여부를 toggle 할 수 있습니다. 
+완료한 일의 체크 버튼을 누르면 체크버튼과 텍스트의 색이 바뀝니다.
+그리고 마우스를 올렸을 때 삭제버튼이 생기고, 버튼을 누르면 항목이 삭제됩니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### TodoCreate
+새로운 할 일을 등록해주는 컴포넌트입니다. TodoTemplate의 하단 우측에 위치합니다.
+이를 클릭하면 할 일을 입력할 수 있는 폼이 나타납니다. 버튼을 다시 누르면 폼이 사라집니다.
